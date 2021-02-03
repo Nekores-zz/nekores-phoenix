@@ -34,6 +34,36 @@
 .fw-900 {
   font-weight: 900;
 }
+// section-spacing
+.s-py {
+  padding: 120px 0;
+}
+// headings
+
+.title1 {
+  font: normal normal bold 48px/60px Poppins;
+  letter-spacing: 0px;
+  color: #e1001e;
+  opacity: 1;
+}
+.title-2 {
+  font: normal normal bold 30px/50px Poppins;
+  letter-spacing: 0px;
+  color: #050101;
+  opacity: 1;
+}
+.para1 {
+  font: normal normal normal 24px/36px Poppins;
+  letter-spacing: 0px;
+  color: #050101;
+  opacity: 1;
+}
+.para2 {
+  font: normal normal normal 18px/30px Poppins;
+  letter-spacing: 0px;
+  color: #050101;
+}
+
 /* ===========
   2) BUTTONS
   =========== */
@@ -115,4 +145,45 @@
   color: $primary;
   box-shadow: none !important;
   outline: none !important;
+}
+
+// Text-content-card
+.text-content-card {
+  padding-right: 30px;
+  h2 {
+    font: normal normal bold 30px/30px Poppins;
+    letter-spacing: 0px;
+    color: #ffffff;
+    line-height: 34px;
+  }
+  p {
+    font: normal normal normal 18px/30px Poppins;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+}
+
+// work-content-card
+.work-content-card {
+  border-radius: 5px;
+  min-height: 320px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  .content {
+    margin-left: 32px;
+    margin-bottom: 30px;
+    .card-number {
+      font: normal normal bold 36px/30px Poppins;
+      letter-spacing: 0px;
+      color: #e1001e;
+      opacity: 1;
+    }
+    h3 {
+      font: normal normal bold 24px/30px Poppins;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 1;
+    }
+  }
 }

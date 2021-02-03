@@ -23,3 +23,59 @@ section#top-message {
     }
   }
 }
+
+// Section 4
+section#section4 {
+  background: transparent url("./../img/eliminate\ back.jpg") 0% 0% no-repeat
+    padding-box;
+  background-size: cover;
+  .top-content {
+    h3 {
+      text-align: center;
+      font: normal normal bold 24px/36px Poppins;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 1;
+      margin-bottom: 20px;
+    }
+    h2 {
+      text-align: center;
+      font: normal normal bold 48px/60px Poppins;
+      letter-spacing: 0px;
+      color: #e1001e;
+      opacity: 1;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+// section 5
+section#section5 {
+  .top-content {
+    h2 {
+      margin-bottom: 60px;
+    }
+  }
+  .work-content-card-1 {
+    background-image: url("./../img//Mask\ Group\ 5.jpg");
+    background-size: cover;
+  }
+  .work-content-card-2 {
+    background-image: url("./../img/02.png");
+    background-size: cover;
+  }
+  .work-content-card-3 {
+    background-image: url("./../img/03.png");
+    background-size: cover;
+  }
+}
+
+// section 6
+section#section6 {
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  .top-content {
+    h2 {
+      margin-bottom: 60px;
+    }
+  }
+}
