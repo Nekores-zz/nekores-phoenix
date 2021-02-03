@@ -267,6 +267,11 @@ section#section8 {
 // Header Section
 #header {
   background-image: url("../img/header/heroimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .underlne {
+    border-bottom: 3px solid $primary;
+  }
   @media (min-width: 767px) {
     .navbar-collapse > ul.navbar-nav {
       margin: auto;
@@ -558,5 +563,95 @@ section#section-3 {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+section#overflow-client {
+  position: relative;
+  .client-card {
+    @media (min-width: 992px) {
+      max-width: 465px;
+      position: absolute;
+      right: 80px;
+      top: -380px;
+      width: 450px;
+    }
+    @media (max-width: 991px) {
+      background-color: #f2f2f2;
+    }
+  }
+  .card-body {
+    position: relative;
+    background-color: #fff0e8a3;
+    padding: 0px;
+    border-radius: 64px 10px 10px 10px;
+    @media (max-width: 991px) {
+      padding: 10px;
+      background-color: #f2f2f2 !important;
+    }
+    @media (min-width: 992px) {
+      .bg-blur {
+        height: 200px;
+      }
+    }
+    padding: 40px 30px;
+    .wrapper {
+      @media (min-width: 992px) {
+        position: absolute;
+      }
+
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      padding: 30px;
+    }
+    .profile-img {
+      position: absolute;
+      top: -55px;
+      right: 20px;
+    }
+    .machine-img {
+      @media (max-width: 991px) {
+        display: none;
+      }
+      position: absolute;
+      height: 250px;
+      right: -70px;
+      bottom: -50px;
+    }
+    .rating {
+      margin-bottom: 7px;
+      span {
+        svg {
+          height: 24px;
+          width: 24px;
+        }
+      }
+    }
+    h4 {
+      font: normal normal bold 24px/24px Poppins;
+      letter-spacing: 0px;
+      color: #050101;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    p {
+      font: normal normal normal 16px/24px Poppins;
+      letter-spacing: 0px;
+      color: #050101;
+      margin-bottom: 0;
+      margin-top: 7px;
+    }
+    button {
+      margin-top: 7px;
+      font: normal normal bold 16px/24px Poppins;
+      letter-spacing: 0px;
+      color: $primary;
+      padding: 7px 0 0 0;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
   }
 }
