@@ -626,7 +626,7 @@ section#section7 .image {
 
 section#section7 .image .circle-icon {
   position: absolute;
-  top: 42%;
+  top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -634,53 +634,49 @@ section#section7 .image .circle-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 section#section7 .image .circle-icon a {
-  -webkit-transition: ease-in-out all 0.5;
-  transition: ease-in-out all 0.5;
-  text-decoration: none;
-  font-size: 50px;
-  background-color: #b7827e;
-  color: #e23530;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  line-height: 64px;
-  text-shadow: 5px 5px 31px #656565;
+  text-align: center;
+  line-height: 60px;
+  width: 75px;
+  height: 75px;
+  background: #b6817c 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 3px 3px 6px #00000029;
+          box-shadow: 3px 3px 6px #00000029;
+  opacity: 1;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  -webkit-transition: ease-in-out all 0.3s;
+  transition: ease-in-out all 0.3s;
+}
+
+section#section7 .image .circle-icon a svg {
+  left: 4px;
+  position: relative;
+  -webkit-transition: ease-out all 0.3s;
+  transition: ease-out all 0.3s;
 }
 
 section#section7 .image .circle-icon a:hover {
-  width: 90px;
-  height: 90px;
-  line-height: 68px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-section#section7 .image .circle-icon a:hover img {
-  width: 30px;
-}
-
-@media (max-width: 767px) {
-  section#section7 .image .circle-icon {
-    top: 41%;
-  }
-  section#section7 .image .circle-icon a {
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    line-height: 32px;
-  }
-  section#section7 .image .circle-icon a:hover {
-    width: 55px;
-    height: 55px;
-    line-height: 38px;
-  }
-  section#section7 .image .circle-icon a:hover img {
-    width: 20px;
-  }
+section#section7 .image .circle-icon a:hover svg {
+  -webkit-transition: ease-out all 0.3s;
+  transition: ease-out all 0.3s;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 section#section8 {
@@ -689,6 +685,10 @@ section#section8 {
 
 section#section8 .top-content h2 {
   margin-bottom: 60px;
+}
+
+section#section8 .bdr-round {
+  border-radius: 8px;
 }
 
 #header {
@@ -1253,13 +1253,36 @@ section#overflow-client .card-body button {
   max-width: 100%;
 }
 
-#section-9 .client-card .video .icon {
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
+#section-9 .client-card .video .icon-wrapper {
   position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section-9 .client-card .video .icon {
+  position: relative;
   height: 70px;
   width: 70px;
-  line-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   border-radius: 50%;
   background: #ffffff8f;
@@ -1267,18 +1290,31 @@ section#overflow-client .card-body button {
           box-shadow: 3px 3px 6px #00000029;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 #section-9 .client-card .video .icon svg {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
   left: 4px;
   position: relative;
+}
+
+#section-9 .client-card .video .icon:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#section-9 .client-card .video .icon:hover svg {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 @media (max-width: 992px) {
   #section-9 .client-card .video .icon {
     height: 54px;
     width: 54px;
-    line-height: 54px;
   }
   #section-9 .client-card .video .icon svg {
     width: 24px;
@@ -1326,13 +1362,6 @@ section#overflow-client .card-body button {
   outline: none;
 }
 
-#section-9 .client-card:hover .icon {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
-}
-
 #section-10 {
   background-color: #f2f2f2;
 }
@@ -1363,27 +1392,58 @@ section#overflow-client .card-body button {
   max-height: 100%;
 }
 
-#section-10 .slider .slider-thumbnails .slider-thumbnail .play-icon {
+#section-10 .slider .slider-thumbnails .slider-thumbnail .icon-wrapper {
   position: absolute;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-10 .slider .slider-thumbnails .slider-thumbnail .play-icon {
   height: 70px;
   width: 70px;
-  line-height: 70px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
   background: #ffffff8f;
   -webkit-box-shadow: 3px 3px 6px #00000029;
           box-shadow: 3px 3px 6px #00000029;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 #section-10 .slider .slider-thumbnails .slider-thumbnail .play-icon svg {
   position: relative;
   left: 4px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+#section-10 .slider .slider-thumbnails .slider-thumbnail .play-icon:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#section-10 .slider .slider-thumbnails .slider-thumbnail .play-icon:hover svg {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 @media (max-width: 992px) {
@@ -1418,8 +1478,13 @@ section#overflow-client .card-body button {
   color: #050101;
 }
 
-#section-10 .price h3 {
+#section-10 .price hr {
+  border: 1px solid #afafaf;
+  background: #afafaf;
   margin-bottom: 20px;
+}
+
+#section-10 .price h3 {
   font: normal normal bold 90px/90px Poppins;
   letter-spacing: 0px;
   color: #050101;
@@ -1611,7 +1676,8 @@ section#overflow-client .card-body button {
   }
 }
 
-#footer .para {
+#footer .link {
+  text-decoration: none;
   font: normal normal normal 16px/30px Poppins;
   letter-spacing: 0px;
 }
@@ -1653,10 +1719,12 @@ section#overflow-client .card-body button {
 .tab {
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 0px 0px 0px 10px;
-  border: 1px solid #05010133;
+  -webkit-box-shadow: -1px 1px 2px #05010133;
+          box-shadow: -1px 1px 2px #05010133;
   margin-top: 1px;
   width: calc(100% - 20px);
   border-top-width: 0px;
+  margin-top: 2px;
 }
 
 .tab:first-child {
@@ -1685,7 +1753,7 @@ section#overflow-client .card-body button {
   padding-left: 31px;
   padding-top: 29px;
   padding-bottom: 18px;
-  font-weight: 800;
+  font-weight: 700;
   color: #e1001e;
   padding-right: 20px;
 }
@@ -1708,7 +1776,7 @@ section#overflow-client .card-body button {
 }
 
 .tab .tab-button.collapsed span svg {
-  fill: #050101;
+  fill: #797979;
 }
 
 .tab .tab-button.collapsed .caret {
