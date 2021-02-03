@@ -611,12 +611,6 @@ p {
   }
 }
 
-@media (max-width: 992px) {
-  #section-10 .feature-list .list-item .text {
-    font: normal normal normal 16px/20px Poppins;
-  }
-}
-
 #section-10 .feature-list .list-item {
   margin-bottom: 32px;
   display: -webkit-box;
@@ -637,21 +631,14 @@ p {
   margin-bottom: 0;
 }
 
-#section-10 .options {
-  margin: 50px 0;
+@media (max-width: 992px) {
+  #section-10 .feature-list .list-item .text {
+    font: normal normal normal 16px/20px Poppins;
+  }
 }
 
-@media (max-width: 922px) {
-  #section-10 .options .option {
-    padding: 24px;
-    width: calc(100% + 32px);
-  }
-  #section-10 .options .option .text {
-    font: normal normal noraml 18px/24px Poppins;
-  }
-  #section-10 .options .option .price {
-    font: normal normal bold 30px/30px Poppins;
-  }
+#section-10 .options {
+  margin: 50px 0;
 }
 
 #section-10 .options .option {
@@ -686,6 +673,19 @@ p {
   color: #050101;
 }
 
+@media (max-width: 922px) {
+  #section-10 .options .option {
+    padding: 24px;
+    width: calc(100% + 32px);
+  }
+  #section-10 .options .option .text {
+    font: normal normal noraml 18px/24px Poppins;
+  }
+  #section-10 .options .option .price {
+    font: normal normal bold 30px/30px Poppins;
+  }
+}
+
 #section-10 .add-card-btn {
   width: inherit;
   padding: 23px 0;
@@ -706,15 +706,15 @@ p {
   background-size: cover;
 }
 
+#section-12 h3 {
+  font: normal normal bold 40px/60px Poppins;
+  letter-spacing: 0px;
+}
+
 @media (max-width: 992px) {
   #section-12 h3 {
     font: normal normal bold 18px/24px Poppins;
   }
-}
-
-#section-12 h3 {
-  font: normal normal bold 40px/60px Poppins;
-  letter-spacing: 0px;
 }
 
 #section-12 button {
