@@ -85,3 +85,22 @@ $("#moveToBottom").click(function () {
   window.scrollTo({ top: documentHeight, behavior: "smooth" });
   return false;
 });
+
+$(window).scroll(function () {
+  var sticky = $(".navbar"),
+    scroll = $(window).scrollTop();
+
+  if (scroll >= 55) {
+    // sticky.addClass("bg-light");
+    sticky.addClass("navbar-light");
+    sticky.removeClass("navbar-dark");
+    $(".navbar-brand img").attr("src", "assets/img/logored.svg");
+    sticky.addClass("fixed");
+  } else {
+    sticky.removeClass("fixed");
+    sticky.addClass("navbar-dark");
+
+    $(".navbar-brand img").attr("src", "assets/img/logo.svg");
+
+  }
+});
