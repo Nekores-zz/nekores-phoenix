@@ -338,14 +338,15 @@ section#section-3 {
     text-align: center;
     max-width: 1000px;
     margin: auto;
-    p{
+    p {
       padding-bottom: 50px;
     }
   }
-  .text-content-card h2{
+  .text-content-card h2 {
     text-decoration: line-through;
   }
-  .text-content-card h2, .text-content-card p{
+  .text-content-card h2,
+  .text-content-card p {
     color: #050101;
   }
 }

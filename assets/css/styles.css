@@ -619,7 +619,8 @@ section#section-3 .text-content-card h2 {
   text-decoration: line-through;
 }
 
-section#section-3 .text-content-card h2, section#section-3 .text-content-card p {
+section#section-3 .text-content-card h2,
+section#section-3 .text-content-card p {
   color: #050101;
 }
 /*# sourceMappingURL=styles.css.map */
