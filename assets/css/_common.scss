@@ -23,9 +23,6 @@
 .fw-700 {
   font-weight: 700;
 }
-.fw-800 {
-  font-weight: 800;
-}
 .fw-900 {
   font-weight: 900;
 }
@@ -86,7 +83,7 @@
   }
 }
 .para2 {
-  font: normal normal bold 18px/30px Poppins;
+  font: normal normal 18px/30px Poppins;
   letter-spacing: 0px;
   color: #050101;
 }
@@ -198,6 +195,9 @@
     p {
       font: normal normal normal 16px/24px Poppins;
     }
+  }
+  @media (max-width: 767px) {
+    padding: 0;
   }
 }
 

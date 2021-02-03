@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap");
 *,
 html,
 body {
@@ -50,10 +50,6 @@ p {
 
 .fw-700 {
   font-weight: 700;
-}
-
-.fw-800 {
-  font-weight: 800;
 }
 
 .fw-900 {
@@ -135,7 +131,7 @@ p {
 }
 
 .para2 {
-  font: normal normal bold 18px/30px Poppins;
+  font: normal normal 18px/30px Poppins;
   letter-spacing: 0px;
   color: #050101;
 }
@@ -263,6 +259,12 @@ p {
   }
   .text-content-card p {
     font: normal normal normal 16px/24px Poppins;
+  }
+}
+
+@media (max-width: 767px) {
+  .text-content-card {
+    padding: 0;
   }
 }
 
@@ -1666,7 +1668,7 @@ section#overflow-client .card-body button {
 }
 
 #section-12 img {
-  bottom: -97px;
+  bottom: -88px;
   right: 0;
   max-height: 100%;
 }
@@ -1683,6 +1685,7 @@ section#overflow-client .card-body button {
   text-decoration: none;
   font: normal normal normal 16px/30px Poppins;
   letter-spacing: 0px;
+  color: #050101;
 }
 
 .f-p {

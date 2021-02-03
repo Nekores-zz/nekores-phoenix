@@ -512,10 +512,9 @@ section#section8 {
         }
       }
     }
-   
   }
   @media (max-width: 767px) {
-     .circle-comp {
+    .circle-comp {
       padding-top: 32px !important;
     }
     height: 850px;
@@ -1059,7 +1058,7 @@ section#overflow-client {
     }
   }
   img {
-    bottom: -97px;
+    bottom: -88px;
     right: 0;
     max-height: 100%;
   }
@@ -1078,6 +1077,7 @@ section#overflow-client {
     text-decoration: none;
     font: normal normal normal 16px/30px Poppins;
     letter-spacing: 0px;
+    color: #050101;
   }
 }
 
