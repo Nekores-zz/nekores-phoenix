@@ -917,17 +917,18 @@ section#section8 .top-content h2 {
   #section-2 .root-ul li .circle-comp img {
     height: 40px;
   }
-  #section-2 .root-ul li .circle-comp p {
-    font-size: 14px;
-    line-height: 17px;
-    margin-top: 9px;
-  }
 }
 
 #section-2 .root-ul li .circle-comp {
   text-align: center;
   padding: 0px 45px;
   padding-top: 45px;
+}
+
+#section-2 .root-ul li .circle-comp p.para2 {
+  line-height: 24px;
+  margin-top: 15px;
+  font-weight: 400;
 }
 
 #section-2 .item {
