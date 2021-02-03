@@ -26,7 +26,68 @@ p {
   font-family: "Lato", sans-serif;
 }
 
+/*
+1) BUTTON
+*/
+/* ===========
+  1) BUTTON
+  =========== */
+.btn-capsule {
+  border-radius: 50px;
+}
+
+.btn-sm {
+  padding: 5px 24px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.btn-md {
+  padding: 7px 27px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn-lg {
+  padding: 9px 30px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #e1001e;
+  border-color: #e1001e;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:visited {
+  color: #e1001e;
+  background-color: #fff;
+  border-color: #e1001e;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-outline-primary {
+  border-color: #e1001e;
+  color: #e1001e;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary:visited {
+  background-color: #e1001e;
+  border-color: #e1001e;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
+}
+
 .navbar {
-  background: "#E1001E";
+  background: #e1001e;
 }
 /*# sourceMappingURL=styles.css.map */
