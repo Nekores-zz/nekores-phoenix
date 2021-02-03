@@ -1,0 +1,54 @@
+/*
+1) BUTTON
+*/
+
+/* ===========
+  1) BUTTON
+  =========== */
+.btn-capsule {
+  border-radius: 50px;
+}
+
+.btn-sm {
+  padding: 5px 24px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.btn-md {
+  padding: 7px 27px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.btn-lg {
+  padding: 9px 30px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:visited {
+  color: $primary;
+  background-color: $white;
+  border-color: $primary;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.btn-outline-primary {
+  border-color: $primary;
+  color: $primary;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary:visited {
+  background-color: $primary;
+  border-color: $primary;
+  box-shadow: none !important;
+  outline: none !important;
+}
