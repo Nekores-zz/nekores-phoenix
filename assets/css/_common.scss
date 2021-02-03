@@ -1,9 +1,41 @@
 /*
-1) BUTTON
+1) GLOBAL STYLES 
+2) BUTTONS
 */
 
 /* ===========
-  1) BUTTON
+  1) GLOBAL STYLES
+  =========== */
+// font-weight
+.fw-100 {
+  font-weight: 100;
+}
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
+}
+/* ===========
+  2) BUTTONS
   =========== */
 .btn-capsule {
   border-radius: 50px;
@@ -42,6 +74,7 @@
 .btn-outline-primary {
   border-color: $primary;
   color: $primary;
+  border-width: 2px;
 }
 .btn-outline-primary:hover,
 .btn-outline-primary:focus,
@@ -49,6 +82,37 @@
 .btn-outline-primary:visited {
   background-color: $primary;
   border-color: $primary;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-white {
+  background-color: $white;
+  border-color: $white;
+}
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white:visited {
+  color: $white;
+  background-color: $white;
+  border-color: $white;
+  box-shadow: none !important;
+  outline: none !important;
+  color: $primary;
+}
+.btn-outline-white {
+  border-color: $white;
+  color: $white;
+  border-width: 2px;
+}
+.btn-outline-white:hover,
+.btn-outline-white:focus,
+.btn-outline-white:active,
+.btn-outline-white:visited {
+  background-color: $white;
+  border-color: $white;
+  color: $primary;
   box-shadow: none !important;
   outline: none !important;
 }

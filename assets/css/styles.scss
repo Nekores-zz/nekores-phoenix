@@ -2,7 +2,24 @@
 @import "colors";
 @import "common";
 
-
-.navbar{
-  background : $primary
+// Top Message Section
+section#top-message {
+  background-color: $primary;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  ul {
+    list-style-type: none;
+    li {
+      @media (min-width: 768px) {
+        display: inline-block;
+        &:nth-last-child(1) {
+          margin-left: 20px;
+        }
+      }
+      @media (max-width: 767px) {
+        margin: 5px 0px;
+      }
+    }
+  }
 }
