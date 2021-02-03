@@ -21,10 +21,6 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
-/*
-1) GLOBAL STYLES 
-2) BUTTONS
-*/
 /* ===========
   1) GLOBAL STYLES
   =========== */
@@ -1192,6 +1188,8 @@ section#section7 .image .circle-icon {
 }
 
 section#section7 .image .circle-icon a {
+  -webkit-transition: ease-in-out all 0.5;
+  transition: ease-in-out all 0.5;
   text-decoration: none;
   font-size: 50px;
   background-color: #b7827e;
@@ -1203,6 +1201,16 @@ section#section7 .image .circle-icon a {
   text-shadow: 5px 5px 31px #656565;
 }
 
+section#section7 .image .circle-icon a:hover {
+  width: 90px;
+  height: 90px;
+  line-height: 68px;
+}
+
+section#section7 .image .circle-icon a:hover img {
+  width: 30px;
+}
+
 @media (max-width: 767px) {
   section#section7 .image .circle-icon {
     top: 41%;
@@ -1211,7 +1219,15 @@ section#section7 .image .circle-icon a {
     width: 50px;
     height: 50px;
     font-size: 25px;
-    line-height: 36px;
+    line-height: 32px;
+  }
+  section#section7 .image .circle-icon a:hover {
+    width: 55px;
+    height: 55px;
+    line-height: 38px;
+  }
+  section#section7 .image .circle-icon a:hover img {
+    width: 20px;
   }
 }
 
