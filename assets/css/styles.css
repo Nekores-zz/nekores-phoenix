@@ -99,7 +99,7 @@ p {
 .btn-primary:visited {
   color: #e1001e;
   background-color: #fff;
-  border-color: #e1001e;
+  border-color: #fff;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   outline: none !important;
@@ -167,6 +167,14 @@ section#top-message {
 
 section#top-message ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  section#top-message ul li {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
@@ -182,5 +190,102 @@ section#top-message ul {
   section#top-message ul li {
     margin: 5px 0px;
   }
+}
+
+#header {
+  background-image: url("../img/header/heroimage.jpg");
+}
+
+@media (min-width: 767px) {
+  #header .navbar-collapse > ul.navbar-nav {
+    margin: auto;
+  }
+}
+
+#header nav {
+  padding: 40px 40px;
+}
+
+@media (max-width: 768px) {
+  #header nav {
+    padding: 20px 0px;
+  }
+}
+
+#header nav ul {
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#header nav ul li a {
+  border-radius: 50px;
+  padding: 6px 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+#header nav ul li a:hover {
+  background-color: #fff;
+  color: #e1001e;
+}
+
+#header .header-content {
+  padding: 100px 0px;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  #header .header-content {
+    text-align: center;
+    padding: 80px 0px;
+    padding-top: 40px;
+  }
+}
+
+#header .header-content h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+}
+
+#header .header-content p {
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 28px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  #header .header-content h2 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  #header .header-content p {
+    font-size: 18px;
+    margin-top: 26px;
+    margin-bottom: 32px;
+  }
+}
+
+#companies {
+  padding-top: 40px;
+}
+
+#companies .item {
+  max-width: 180px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+#companies .item img {
+  margin-bottom: 10px;
+}
+
+#companies .item p {
+  margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */
