@@ -8,6 +8,7 @@ body {
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -67,13 +68,9 @@ p {
   padding: 120px 0;
 }
 
-.f-py {
-  padding: 70px 0;
-}
-
 @media (max-width: 992px) {
-  .f-py {
-    padding: 40px 0;
+  .s-py {
+    padding: 60px 20px;
   }
 }
 
@@ -247,10 +244,65 @@ p {
   opacity: 1;
 }
 
+#section-12 {
+  background: url("../img/section9/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#section-12 p {
+  font: normal normal bold 18px/24px Poppins;
+  letter-spacing: 0px;
+}
+
+#section-12 h3 {
+  font: normal normal bold 40px/60px Poppins;
+  letter-spacing: 0px;
+}
+
+#section-12 button {
+  padding: 15px 30px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#section-12 img {
+  bottom: -97px;
+  right: 100px;
+}
+
+@media (max-width: 992px) {
+  #section-12 img {
+    right: unset;
+    left: calc(100% - 166px);
+  }
+}
+
 #footer .para {
   font: normal normal normal 16px/30px Poppins;
   letter-spacing: 0px;
-  color: #050101;
+}
+
+.f-p {
+  padding: 70px 90px;
+}
+
+@media (max-width: 992px) {
+  .f-p {
+    padding: 40px;
+  }
+}
+
+.clr-p {
+  color: #e1001e;
+}
+
+.clr-w {
+  color: #fff;
+}
+
+.clr-d {
+  color: "#050101";
 }
 
 section#top-message {
