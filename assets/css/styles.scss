@@ -234,6 +234,28 @@ section#section8 {
   @media (min-width: 767px) {
     .navbar-collapse > ul.navbar-nav {
       margin: auto;
+      margin-top: 0;
+    }
+  }
+  .navbar-collapse {
+    margin: auto;
+    text-align: center;
+  }
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    animation: smoothScroll 0.5s forwards;
+    background: white;
+    padding: 5px 40px;
+    box-shadow: 0px 0px 10px #0000002e;
+
+    @media (max-width: 767px) {
+      .navbar-collapse {
+        margin-bottom: 20px;
+      }
     }
   }
   nav {
@@ -244,6 +266,7 @@ section#section8 {
     ul {
       text-align: center;
       width: fit-content;
+      margin: auto;
       li {
         a {
           border-radius: 50px;
@@ -486,5 +509,14 @@ section#section-3 {
   .text-content-card h2,
   .text-content-card p {
     color: #050101;
+  }
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
