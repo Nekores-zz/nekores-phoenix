@@ -301,6 +301,28 @@ p {
   opacity: 1;
 }
 
+.work-content-card .custom-image {
+  position: absolute;
+  right: -85px;
+  z-index: 1;
+  top: 70px;
+}
+
+@media (max-width: 768px) {
+  .work-content-card .custom-image {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: unset;
+    top: unset;
+    left: 28%;
+    margin: 0 auto;
+    bottom: -30px;
+  }
+  .work-content-card .custom-image img {
+    width: 200px;
+  }
+}
+
 @media (max-width: 768px) {
   .work-content-card {
     min-height: 250px;
@@ -679,7 +701,7 @@ p {
     width: calc(100% + 32px);
   }
   #section-10 .options .option .text {
-    font: normal normal noraml 18px/24px Poppins;
+    font: normal normal normal 18px/24px Poppins;
   }
   #section-10 .options .option .price {
     font: normal normal bold 30px/30px Poppins;
@@ -732,6 +754,7 @@ p {
 #section-12 img {
   bottom: -97px;
   right: 0;
+  max-height: 100%gitgit;
 }
 
 @media (max-width: 992px) {
@@ -1120,6 +1143,10 @@ section#section6 .zero {
   }
 }
 
+section#section6 .progress-bar {
+  border-radius: 32px;
+}
+
 section#section7 .body-content .body-top-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1145,6 +1172,49 @@ section#section7 .body-content .body-top-content h2 {
   }
 }
 
+section#section7 .image {
+  position: relative;
+}
+
+section#section7 .image .circle-icon {
+  position: absolute;
+  top: 42%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#section7 .image .circle-icon a {
+  text-decoration: none;
+  font-size: 50px;
+  background-color: #b7827e;
+  color: #e23530;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  line-height: 64px;
+  text-shadow: 5px 5px 31px #656565;
+}
+
+@media (max-width: 767px) {
+  section#section7 .image .circle-icon {
+    top: 41%;
+  }
+  section#section7 .image .circle-icon a {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    line-height: 36px;
+  }
+}
+
 section#section8 {
   background: #f2f2f2 0% 0% no-repeat padding-box;
 }
@@ -1160,6 +1230,32 @@ section#section8 .top-content h2 {
 @media (min-width: 767px) {
   #header .navbar-collapse > ul.navbar-nav {
     margin: auto;
+    margin-top: 0;
+  }
+}
+
+#header .navbar-collapse {
+  margin: auto;
+  text-align: center;
+}
+
+#header .fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  -webkit-animation: smoothScroll 0.5s forwards;
+          animation: smoothScroll 0.5s forwards;
+  background: white;
+  padding: 5px 40px;
+  -webkit-box-shadow: 0px 0px 10px #0000002e;
+          box-shadow: 0px 0px 10px #0000002e;
+}
+
+@media (max-width: 767px) {
+  #header .fixed .navbar-collapse {
+    margin-bottom: 20px;
   }
 }
 
@@ -1178,6 +1274,7 @@ section#section8 .top-content h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: auto;
 }
 
 #header nav ul li a {
@@ -1396,13 +1493,14 @@ section#section8 .top-content h2 {
 
 @media (max-width: 767px) {
   #section-2 {
-    height: 1130px;
+    height: 850px;
   }
   #section-2 .root-ul.left {
-    right: -65px;
+    right: -87px;
   }
   #section-2 .root-ul.left li:nth-child(1) {
     margin-right: 50px;
+    margin-bottom: 12px;
   }
   #section-2 .root-ul.left li:nth-child(2) {
     margin-right: 90px;
@@ -1411,14 +1509,17 @@ section#section8 .top-content h2 {
     padding-top: 20px;
   }
   #section-2 .root-ul.right {
-    left: 0px;
-    top: 135px;
+    left: -2px;
+    top: 132px;
   }
   #section-2 .root-ul.right li:nth-child(1) {
     margin-left: 0px;
+    margin-bottom: 12px;
   }
   #section-2 .root-ul.right li:nth-child(2) {
     margin-left: 0px;
+    left: -38px;
+    position: relative;
   }
   #section-2 .root-ul li {
     margin-bottom: 30px;
@@ -1447,5 +1548,27 @@ section#section-3 .text-content-card h2 {
 section#section-3 .text-content-card h2,
 section#section-3 .text-content-card p {
   color: #050101;
+}
+
+@-webkit-keyframes smoothScroll {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes smoothScroll {
+  0% {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 /*# sourceMappingURL=styles.css.map */

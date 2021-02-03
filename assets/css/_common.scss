@@ -229,6 +229,23 @@
       opacity: 1;
     }
   }
+  .custom-image {
+    position: absolute;
+    right: -85px;
+    z-index: 1;
+    top: 70px;
+    @media (max-width: 768px) {
+      transform: rotate(90deg);
+      right: unset;
+      top: unset;
+      left: 28%;
+      margin: 0 auto;
+      bottom: -30px;
+      img {
+        width: 200px;
+      }
+    }
+  }
   @media (max-width: 768px) {
     min-height: 250px;
   }
@@ -536,7 +553,7 @@
         padding: 24px;
         width: calc(100% + 32px);
         .text {
-          font: normal normal noraml 18px/24px Poppins;
+          font: normal normal normal 18px/24px Poppins;
         }
         .price {
           font: normal normal bold 30px/30px Poppins;
@@ -581,6 +598,7 @@
   img {
     bottom: -97px;
     right: 0;
+    max-height: 100%gitgit;
   }
   @media (max-width: 992px) {
     img {
