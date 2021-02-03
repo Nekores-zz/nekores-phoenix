@@ -469,7 +469,7 @@ section#section8 {
       }
       .circle-comp {
         text-align: center;
-        padding: 0px 45px;
+        padding: 0px 25px;
         padding-top: 45px;
         p.para2 {
           line-height: 24px;
@@ -512,8 +512,12 @@ section#section8 {
         }
       }
     }
+   
   }
   @media (max-width: 767px) {
+     .circle-comp {
+      padding-top: 32px !important;
+    }
     height: 850px;
     .root-ul.left {
       right: -87px;
@@ -525,7 +529,7 @@ section#section8 {
       li:nth-child(2) {
         margin-right: 90px;
         .circle-comp {
-          padding-top: 20px;
+          padding-top: 10px !important;
         }
       }
     }

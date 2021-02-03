@@ -921,7 +921,7 @@ section#section8 .bdr-round {
 
 #section-2 .root-ul li .circle-comp {
   text-align: center;
-  padding: 0px 45px;
+  padding: 0px 25px;
   padding-top: 45px;
 }
 
@@ -970,6 +970,9 @@ section#section8 .bdr-round {
   #section-2 {
     height: 850px;
   }
+  #section-2 .circle-comp {
+    padding-top: 32px !important;
+  }
   #section-2 .root-ul.left {
     right: -87px;
   }
@@ -981,7 +984,7 @@ section#section8 .bdr-round {
     margin-right: 90px;
   }
   #section-2 .root-ul.left li:nth-child(2) .circle-comp {
-    padding-top: 20px;
+    padding-top: 10px !important;
   }
   #section-2 .root-ul.right {
     left: -2px;
