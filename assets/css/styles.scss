@@ -37,6 +37,9 @@ section#section4 {
       color: #ffffff;
       opacity: 1;
       margin-bottom: 20px;
+      @media (max-width: 767px) {
+        font: normal normal bold 24px/36px Poppins;
+      }
     }
     h2 {
       text-align: center;
@@ -45,6 +48,9 @@ section#section4 {
       color: #e1001e;
       opacity: 1;
       margin-bottom: 60px;
+      @media (max-width: 767px) {
+        font: normal normal bold 30px/36px Poppins;
+      }
     }
   }
 }
@@ -72,6 +78,138 @@ section#section5 {
 
 // section 6
 section#section6 {
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  .top-content {
+    h2 {
+      margin-bottom: 60px;
+    }
+  }
+  .phoenix-tabs {
+    display: flex;
+    justify-content: center;
+    .nav-link {
+      font: normal normal bold 30px/30px Poppins;
+      letter-spacing: 0px;
+      color: #050101;
+      opacity: 1;
+      padding-bottom: 20px;
+      border: 2px transparent;
+      &:hover {
+        background: none;
+      }
+    }
+    .nav-link.active {
+      background: none;
+      border: none;
+      border-bottom: 2px solid #e1001e;
+      font: normal normal bold 30px/30px Poppins;
+      letter-spacing: 0px;
+      color: #e1001e;
+      opacity: 1;
+    }
+    @media (max-width: 768px) {
+      justify-content: space-between;
+      .nav-link {
+        font: normal normal bold 18px/30px Poppins;
+      }
+      .nav-link.active {
+        font: normal normal bold 18px/30px Poppins;
+      }
+    }
+  }
+  .progress {
+    height: 10px !important;
+    border-radius: 32px !important;
+  }
+  .progress-1 {
+    display: flex;
+    align-items: center;
+    label {
+      font: normal normal bold 18px/30px Poppins;
+      letter-spacing: 0px;
+      color: #e1001e;
+      opacity: 1;
+      flex: 25%;
+    }
+    .progress {
+      flex: 75%;
+    }
+    @media (max-width: 768px) {
+      label {
+        flex: 28%;
+        font: normal normal bold 16px/30px Poppins;
+      }
+      .progress {
+        flex: 72%;
+      }
+    }
+  }
+  .progress-g {
+    display: flex;
+    align-items: center;
+    label {
+      font: normal normal normal 18px/30px Poppins;
+      letter-spacing: 0px;
+      color: #050101;
+      opacity: 1;
+      flex: 25%;
+    }
+    .progress {
+      flex: 75%;
+    }
+    @media (max-width: 768px) {
+      label {
+        flex: 28%;
+        font: normal normal normal 16px/20px Poppins;
+      }
+      .progress {
+        flex: 72%;
+      }
+    }
+  }
+  .outer {
+    text-align: right;
+  }
+  .zero {
+    font: normal normal bold 18px/24px Poppins;
+    letter-spacing: 0px;
+    color: #050101;
+    opacity: 1;
+  }
+  #myTab {
+    @media (max-width: 767px) {
+      margin: 0 -12px;
+    }
+  }
+}
+
+// section 7
+
+section#section7 {
+  .body-content {
+    .body-top-content {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      h2 {
+        font: normal normal bold 30px/50px Poppins;
+        letter-spacing: 0px;
+        color: #050101;
+        opacity: 1;
+      }
+      @media (max-width: 767px) {
+        h2 {
+          font: normal normal bold 24px/36px Poppins;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+// section 8
+
+section#section8 {
   background: #f2f2f2 0% 0% no-repeat padding-box;
   .top-content {
     h2 {
