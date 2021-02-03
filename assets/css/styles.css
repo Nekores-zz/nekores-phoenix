@@ -269,6 +269,28 @@ p {
   opacity: 1;
 }
 
+.work-content-card .custom-image {
+  position: absolute;
+  right: -85px;
+  z-index: 1;
+  top: 70px;
+}
+
+@media (max-width: 768px) {
+  .work-content-card .custom-image {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: unset;
+    top: unset;
+    left: 28%;
+    margin: 0 auto;
+    bottom: -30px;
+  }
+  .work-content-card .custom-image img {
+    width: 200px;
+  }
+}
+
 @media (max-width: 768px) {
   .work-content-card {
     min-height: 250px;
@@ -541,6 +563,10 @@ section#section6 .zero {
   }
 }
 
+section#section6 .progress-bar {
+  border-radius: 32px;
+}
+
 section#section7 .body-content .body-top-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,6 +589,49 @@ section#section7 .body-content .body-top-content h2 {
   section#section7 .body-content .body-top-content h2 {
     font: normal normal bold 24px/36px Poppins;
     margin-bottom: 0px;
+  }
+}
+
+section#section7 .image {
+  position: relative;
+}
+
+section#section7 .image .circle-icon {
+  position: absolute;
+  top: 42%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#section7 .image .circle-icon a {
+  text-decoration: none;
+  font-size: 50px;
+  background-color: #b7827e;
+  color: #e23530;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  line-height: 64px;
+  text-shadow: 5px 5px 31px #656565;
+}
+
+@media (max-width: 767px) {
+  section#section7 .image .circle-icon {
+    top: 41%;
+  }
+  section#section7 .image .circle-icon a {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    line-height: 36px;
   }
 }
 
@@ -844,13 +913,14 @@ section#section8 .top-content h2 {
 
 @media (max-width: 767px) {
   #section-2 {
-    height: 1130px;
+    height: 850px;
   }
   #section-2 .root-ul.left {
-    right: -65px;
+    right: -87px;
   }
   #section-2 .root-ul.left li:nth-child(1) {
     margin-right: 50px;
+    margin-bottom: 12px;
   }
   #section-2 .root-ul.left li:nth-child(2) {
     margin-right: 90px;
@@ -859,14 +929,17 @@ section#section8 .top-content h2 {
     padding-top: 20px;
   }
   #section-2 .root-ul.right {
-    left: 0px;
-    top: 135px;
+    left: -2px;
+    top: 132px;
   }
   #section-2 .root-ul.right li:nth-child(1) {
     margin-left: 0px;
+    margin-bottom: 12px;
   }
   #section-2 .root-ul.right li:nth-child(2) {
     margin-left: 0px;
+    left: -38px;
+    position: relative;
   }
   #section-2 .root-ul li {
     margin-bottom: 30px;
