@@ -206,6 +206,23 @@
       opacity: 1;
     }
   }
+  .custom-image {
+    position: absolute;
+    right: -85px;
+    z-index: 1;
+    top: 70px;
+    @media (max-width: 768px) {
+      transform: rotate(90deg);
+      right: unset;
+      top: unset;
+      left: 28%;
+      margin: 0 auto;
+      bottom: -30px;
+      img {
+        width: 200px;
+      }
+    }
+  }
   @media (max-width: 768px) {
     min-height: 250px;
   }

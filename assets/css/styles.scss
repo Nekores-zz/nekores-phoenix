@@ -191,6 +191,9 @@ section#section6 {
       margin: 0 -12px;
     }
   }
+  .progress-bar {
+    border-radius: 32px;
+  }
 }
 
 // section 7
@@ -211,6 +214,39 @@ section#section7 {
         h2 {
           font: normal normal bold 24px/36px Poppins;
           margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  .image {
+    position: relative;
+    .circle-icon {
+      position: absolute;
+      top: 42%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      a {
+        text-decoration: none;
+        font-size: 50px;
+        background-color: #b7827e;
+        color: #e23530;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        line-height: 64px;
+        text-shadow: 5px 5px 31px #656565;
+      }
+      @media (max-width: 767px) {
+        top: 41%;
+        a {
+          width: 50px;
+          height: 50px;
+          font-size: 25px;
+          line-height: 36px;
         }
       }
     }
