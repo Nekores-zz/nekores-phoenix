@@ -181,6 +181,9 @@
       font: normal normal normal 16px/24px Poppins;
     }
   }
+  @media (max-width: 767px) {
+    padding: 0;
+  }
 }
 
 // work-content-card
